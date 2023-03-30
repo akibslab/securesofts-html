@@ -191,6 +191,15 @@
 		}
 	}); // end: Sticky Menu
 
+	// counterUp
+	let counter = $(".count");
+	if (counter.length > 0) {
+		counter.counterUp({
+			delay: 10,
+			time: 1000,
+		});
+	}
+
 	// // WOW active
 	// var wow = new WOW({
 	// 	boxClass: "wow",

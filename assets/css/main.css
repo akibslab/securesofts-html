@@ -778,6 +778,94 @@ button {
 	min-height: 488px;
 	border-radius: 5px;
 	margin-bottom: 30px;
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+.single_works img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	transition: all 0.8s ease-in-out 0s;
+}
+.single_works:hover img {
+	transform: rotate(-15deg) scale(1.2);
+}
+.single_works .hover_text {
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	width: 90%;
+	transform: translateY(100%);
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s ease-in-out 0s;
+	z-index: 2;
+}
+.single_works .hover_text .project_title h4 {
+	margin-bottom: 0;
+	color: var(--color-white);
+}
+.single_works .icon {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 35px;
+	color: var(--color-white);
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s ease-in-out 0s;
+	z-index: 3;
+}
+
+.single_works:hover .icon {
+	visibility: visible;
+	opacity: 1;
+	top: 50%;
+}
+.single_works:hover .hover_text {
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(0);
+}
+.single_works:after {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--color-black);
+	z-index: 1;
+	transition: all 0.5s ease-in-out 0s;
+	visibility: hidden;
+	opacity: 0;
+}
+.single_works:hover:after {
+	visibility: visible;
+	opacity: 0.4;
+}
+.filter_tabs {
+	text-align: center;
+	margin-bottom: 40px;
+}
+.filter_tabs > button {
+	padding: 0;
+	background-color: transparent;
+	border: 1px solid var(--color-primary);
+	padding: 5px 15px;
+	border-radius: 3px;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 600;
+	font-family: var(--font-Pop);
+	color: var(--color-primary);
+	margin: 0 10px;
+}
+.filter_tabs > button.active {
+	color: var(--color-white);
+	background-color: var(--color-primary);
 }
 /* end: Works Area */
 

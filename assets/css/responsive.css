@@ -151,6 +151,18 @@
 		padding: 35px 0;
 		margin-top: 0px;
 	}
+
+	/* service page */
+	.service_img {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	.counter_box {
+		margin-bottom: 40px;
+	}
+	.counter-section {
+		padding-bottom: 30px;
+	}
 }
 
 /* X-Small devices (small mobile) (portrait phones, less than 767px) */
@@ -268,6 +280,13 @@
 	.works-area .section_title {
 		padding-bottom: 30px;
 	}
+	.filter_tabs > button {
+		margin-bottom: 15px;
+	}
+
+	.filter_tabs {
+		margin-bottom: 25px;
+	}
 	.services-area {
 		padding-top: 60px;
 		padding-bottom: 60px;
@@ -341,6 +360,23 @@
 	}
 	.footer_bottom .copyright_text {
 		margin-bottom: 20px;
+	}
+
+	/* service page */
+	.service_img {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	.counter_box {
+		margin-bottom: 40px;
+	}
+	.counter-section {
+		padding-bottom: 30px;
+		margin-top: 60px;
+	}
+	.technology_inner .uses li {
+		flex: 0 0 50%;
+		max-width: 50%;
 	}
 }
 

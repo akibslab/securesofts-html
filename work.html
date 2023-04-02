@@ -138,23 +138,80 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <div class="single_works" style="background-image: url(./assets/img/works/work-1.jpg);"></div>
+        <div class="filter_tabs">
+          <button class="button active" data-filter="*">All</button>
+          <button class="button" data-filter=".psd-to-wp">PSD to WP</button>
+          <button class="button" data-filter=".fimga-to-wp">Figma to WP</button>
+          <button class="button" data-filter=".html-to-wp">HTML to WP</button>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="single_works" style="background-image: url(./assets/img/works/work-2.jpg);"></div>
+      </div>
+      <div class="row" id="works-grid">
+        <!-- <div class="grid-sizer"></div> -->
+        <div class="col-md-6 col-lg-4 grid-item psd-to-wp">
+          <a href="#" class="single_works">
+            <img src="./assets/img/works/work-1.jpg" alt="">
+            <div class="icon"><i class="fas fa-external-link"></i></div>
+            <div class="hover_text">
+              <div class="project_title">
+                <h4>Project Title</h4>
+              </div>
+            </div>
+          </a>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="single_works" style="background-image: url(./assets/img/works/work-3.jpg);"></div>
+        <div class="col-md-6 col-lg-4 grid-item fimga-to-wp">
+          <div class="single_works">
+            <img src="./assets/img/works/work-2.jpg" alt="">
+            <div class="icon"><i class="fas fa-external-link"></i></div>
+            <div class="hover_text">
+              <div class="project_title">
+                <h4>Project Title</h4>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="single_works" style="background-image: url(./assets/img/works/work-4.jpg);"></div>
+        <div class="col-md-6 col-lg-4 grid-item html-to-wp">
+          <div class="single_works">
+            <img src="./assets/img/works/work-3.jpg" alt="">
+            <div class="icon"><i class="fas fa-external-link"></i></div>
+            <div class="hover_text">
+              <div class="project_title">
+                <h4>Project Title</h4>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="single_works" style="background-image: url(./assets/img/works/work-5.jpg);"></div>
+        <div class="col-md-6 col-lg-4 grid-item psd-to-wp">
+          <div class="single_works">
+            <img src="./assets/img/works/work-4.jpg" alt="">
+            <div class="icon"><i class="fas fa-external-link"></i></div>
+            <div class="hover_text">
+              <div class="project_title">
+                <h4>Project Title</h4>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="single_works" style="background-image: url(./assets/img/works/work-6.jpg);"></div>
+        <div class="col-md-6 col-lg-4 grid-item figma-to-wp">
+          <div class="single_works">
+            <img src="./assets/img/works/work-5.jpg" alt="">
+            <div class="icon"><i class="fas fa-external-link"></i></div>
+            <div class="hover_text">
+              <div class="project_title">
+                <h4>Project Title</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 grid-item html-to-wp">
+          <div class="single_works">
+            <img src="./assets/img/works/work-6.jpg" alt="">
+            <div class="icon"><i class="fas fa-external-link"></i></div>
+            <div class="hover_text">
+              <div class="project_title">
+                <h4>Project Title</h4>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -282,6 +339,9 @@
   <!-- CounterUp -->
   <script src="assets/js/waypoints.min.js"></script>
   <script src="assets/js/counterup.min.js"></script>
+
+  <!-- isotope -->
+  <script src="assets/js/isotope.pkgd.min.js"></script>
 
   <!-- Main -->
   <script src="assets/js/main.js"></script>
